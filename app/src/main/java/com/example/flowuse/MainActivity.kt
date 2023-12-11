@@ -33,10 +33,13 @@ class MainActivity : AppCompatActivity() {
 //        FlowTerminal().launchIn()
 
 //        FlowCode().code()
+//        FlowCode().flowCold()
+//        FlowCancel().cancelFlow()
 //        FlowCode().influence()
 //        FlowCode().onStartCompletion()
 
 //        FlowThread().dispatcher()
+        FlowThread().recieveData()
 
 //        stateFlowTest()
 //        stateFlowTest2()

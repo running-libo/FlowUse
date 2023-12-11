@@ -58,4 +58,21 @@ class FlowCode {
                 Log.i("minfo", "$it")
             }
     }
+
+    /**
+     * Flow是冷流
+     */
+    fun flowCold() {
+        runBlocking {
+            val flow = flow {
+                println("开始生产数据")
+                emit("Data")
+            }
+
+            delay(2000)
+            flow.collect {  //当2秒后开始调用collect，flow代码块内才会去执行
+                println("开始接收数据")
+            }
+        }
+    }
 }
